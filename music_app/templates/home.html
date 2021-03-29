@@ -1,0 +1,73 @@
+{% extends 'master_template.html' %}
+
+{% block body %}
+    <div class="d-flex align-items-center justify-content-center">
+        <p>Welcome to VBI Music App. You can register if you are not already an user and enjoy the services.<br>
+        <br>
+        Following are the API calls supported:</p>
+        <br>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+        <table class="table-bordered">
+            <tr>
+                <th>
+                    Method
+                </th>
+                <th>
+                    URL
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>
+                    /api/v1/albums/
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>
+                    /api/v1/albums/{album_id}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>
+                    /api/v1/songs/
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    POST
+                </td>
+                <td>
+                    /api/v1/albums/
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    POST
+                </td>
+                <td>
+                    /api/v1/songs/
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    POST
+                </td>
+                <td>
+                    /api/v1/artists/
+                </td>
+            </tr>
+        </table>
+    </div>
+    <small class="d-flex align-items-center justify-content-center">
+        *You will need a token for POST request. Click <a href="{{ url_for('users.token') }}">here</a> to generate a new token.
+    </small>
+{% endblock %}

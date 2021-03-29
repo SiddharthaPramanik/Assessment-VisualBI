@@ -1,0 +1,18 @@
+{% extends 'master_template.html' %}
+
+{% block body %}
+<div class="d-flex align-items-center justify-content-center">
+    <table class="table-bordered">
+        <tr>
+            <th>
+                Your API Token
+            </th>
+        </tr>
+        <tr>
+            <td>
+                {{ token }}
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
