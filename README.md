@@ -28,6 +28,7 @@
 | POST | /api/v1/albums/ | create albums(s) |
 | POST | /api/v1/songs/ | create sonsg(s) |
 | POST | /api/v1/artists/ | create artist(s) |
+
 Below are the sample responses for GET requests and sample body for POST requests.
 #### Sample reponse for /api/v1/albums/
 ```json
